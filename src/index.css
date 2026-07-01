@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-background: var(--background);
+  --color-accent-bg: var(--accent-bg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #b7ed3f;
+  --text: black;
+  --text-h: #08060d;
+  --background: #e4e8db;
+  --code-bg: #f4f3ec;
+  --accent: oklch(0.97 0 0);
+  --accent-bg: #052f35;
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --mono: ui-monospace, Consolas, monospace;
+  font-family: 'Poppins';
+
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--background);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Fraunces';
+  line-height: 110%;
+}
+
+h1 {
+  @apply text-2xl lg:text-5xl;
+}
+
+h2 {
+  @apply text-xl lg:text-3xl font-bold;
+}
+
+h3 {
+  @apply text-lg lg:text-2xl text-accent-bg font-[600];
+}
+
+.btn-primary {
+  @apply w-full lg:w-fit font-medium bg-primary hover:bg-primary/60 text-accent-bg rounded-lg px-4 py-2;
+}
+
+.btn-outlined {
+  @apply w-full lg:w-fit font-medium border-primary hover:bg-primary hover:border-primary border-2 text-primary hover:text-accent-bg rounded-lg px-[14px] py-[6px];
+}
+
+.menu > a {
+  @apply text-white hover:bg-accent-bg/60 rounded-lg px-4 py-2;
+}
