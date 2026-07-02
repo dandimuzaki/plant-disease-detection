@@ -9,7 +9,7 @@ export default function HealthyResult({state}: {state: State}) {
     pencegahan_penyakit
   } = state.explanation
 
-  return (
+  if (nama_tanaman && deskripsi && rekomendasi_perawatan && pencegahan_penyakit) return (
     <>
       <div className="space-y-4">
         <div className="rounded-lg bg-primary gap-2 lg:gap-4 p-4 grid lg:grid-cols-[2fr_3fr]">

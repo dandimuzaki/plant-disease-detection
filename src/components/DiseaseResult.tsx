@@ -15,7 +15,16 @@ export default function DiseaseResult({state}: {state: State}) {
     referensi
   } = state.explanation
 
-  return (
+  if (nama_bahasa_inggris && 
+    nama_bahasa_indonesia && 
+    penyebab &&
+    gejala &&
+    penyebaran &&
+    langkah_pencegahan &&
+    langkah_penanganan &&
+    jenis_pestisida &&
+    jadwal_penyemprotan &&
+    referensi) return (
     <>
       <div className="space-y-4">
         <div className="rounded-lg bg-primary gap-2 lg:gap-4 p-4 grid lg:grid-cols-[2fr_3fr]">

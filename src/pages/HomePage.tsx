@@ -20,7 +20,7 @@ export default function HomePage() {
   const preview = image ? URL.createObjectURL(image) : null;
 
   const navigate = useNavigate()
-  const handlePredict = async (e) => {
+  const handlePredict = async (e: React.FormEvent<HTMLFormElement>) => {
     try {
       e.preventDefault();
       if (!image) {
