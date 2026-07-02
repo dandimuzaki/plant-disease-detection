@@ -12,11 +12,11 @@ type ModelResult = {
 const models: Record<string, ModelResult> = {
   "Custom CNN": {
     description: "Arsitektur CNN yang dibangun dari awal sebagai baseline penelitian.",
-    trainAccuracy: "94.2%",
-    valAccuracy: "91.8%",
-    precision: "91.3%",
-    recall: "90.8%",
-    f1Score: "91.0%",
+    trainAccuracy: "98.79%",
+    valAccuracy: "95.99%",
+    precision: "96%",
+    recall: "96%",
+    f1Score: "96%",
     trainingTime: "18 menit",
     inferenceTime: "52 ms",
   },
