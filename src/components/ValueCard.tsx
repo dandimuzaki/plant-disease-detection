@@ -1,4 +1,4 @@
-export default function ValueCard ({src, title, subtitle}) {
+export default function ValueCard ({src, title, subtitle}: {src: string, title: string, subtitle: string}) {
   return (
     <div className="flex flex-col justify-between w-full h-full gap-4 lg:gap-6 bg-primary px-4 pt-4 lg:px-6 lg:pt-6 rounded-xl">
       <div className="space-y-2 lg:space-y-4">

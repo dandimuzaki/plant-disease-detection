@@ -1,6 +1,7 @@
+import type { State } from "../types/prediction"
 import Notes from "./Notes"
 
-export default function DiseaseResult({state}) {
+export default function DiseaseResult({state}: {state: State}) {
   const { 
     nama_bahasa_inggris, 
     nama_bahasa_indonesia, 

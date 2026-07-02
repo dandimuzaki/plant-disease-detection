@@ -1,6 +1,7 @@
+import type { State } from "../types/prediction"
 import Notes from "./Notes"
 
-export default function HealthyResult({state}) {
+export default function HealthyResult({state}: {state: State}) {
   const { 
     nama_tanaman,
     deskripsi,
